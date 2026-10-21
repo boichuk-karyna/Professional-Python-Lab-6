@@ -1,0 +1,16 @@
+....................................................                     [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.13.5-final-0 ________________
+
+Name                               Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------------------------
+src/book_catalog/__init__.py           2      0      0      0   100%
+src/book_catalog/config.py            14      0      4      0   100%
+src/book_catalog/io.py                28      0      4      0   100%
+src/book_catalog/models.py            22      0      8      0   100%
+src/book_catalog/repositories.py      18      0      4      0   100%
+src/book_catalog/services.py          44      0      8      0   100%
+------------------------------------------------------------------------------
+TOTAL                                128      0     28      0   100%
+Required test coverage of 80.0% reached. Total coverage: 100.00%
+52 passed in 0.36s
