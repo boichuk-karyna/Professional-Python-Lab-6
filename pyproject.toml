@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "book-catalog-lab06-v2"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["-ra", "--strict-markers"]
+markers = ["integration: integration test"]
+pythonpath = ["src"]
+
+[tool.coverage.run]
+branch = true
+source = ["book_catalog"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 80
